@@ -1,0 +1,60 @@
+        .lesson-block {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--grey-light);
+        }
+        
+        .lesson-block:last-child {
+            border-bottom: none;
+        }
+        
+        .lesson-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .lesson-num {
+            background: var(--navy);
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.3rem 0.75rem;
+            border-radius: 2px;
+            letter-spacing: 0.08em;
+        }
+        
+        .lesson-img {
+            max-width: 500px;
+            width: 100%;
+            border-radius: 3px;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 20px rgba(15, 30, 60, 0.1);
+        }
+        
+        .opinion-block {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+            border-radius: 4px;
+            padding: 2rem 2.5rem;
+            margin-top: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .opinion-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+        
+        .opinion-text {
+            color: rgba(248, 249, 252, 0.8);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }

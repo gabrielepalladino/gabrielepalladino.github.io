@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriele Palladino — Portfolio FSL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="nav-brand">Palladino <span>G.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/terzo-anno.html">3° Anno</a></li>
+            <li><a href="pages/quarto-anno.html">4° Anno</a></li>
+            <li><a href="pages/quinto-anno.html">5° Anno</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-circle c1"></div>
+        <div class="hero-bg-circle c2"></div>
+        <div class="hero-bg-circle c3"></div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow">Portfolio FSL — I.T.I. Pascal</p>
+            <h1 class="hero-title">
+                Gabriele<br><em>Palladino</em>
+            </h1>
+            <p class="hero-desc">
+                Raccolta dei percorsi formativi, esperienze pratiche e progetti realizzati nel corso del triennio scolastico nell'ambito dei Percorsi per le Competenze Trasversali e per l'Orientamento.
+            </p>
+            <a href="pages/terzo-anno.html" class="hero-cta">
+        Esplora il portfolio
+        <span>→</span>
+      </a>
+        </div>
+
+        <a href="https://www.pascal.edu.it/" target="_blank" class="hero-school">
+            <img src="images/logo.png" alt="Logo Pascal" style="height:28px; filter: brightness(0) invert(1) opacity(0.4);" onerror="this.style.display='none'"> I.T.I. B. Pascal
+        </a>
+    </section>
+
+    <!-- CHI SONO -->
+    <section class="about-section" id="about">
+        <div class="about-img-wrap">
+            <img src="images/pfp.jpg" alt="Gabriele Palladino" class="about-img" onerror="this.outerHTML='<div class=\'about-img-placeholder\'>GP</div>'">
+            <div class="about-img-frame"></div>
+        </div>
+        <div class="about-text animate-up">
+            <p class="section-label">Chi sono</p>
+            <h2 class="section-title">Studente, appassionato di tecnologia</h2>
+            <div class="divider"></div>
+            <p>
+                Sono Gabriele Palladino, studente presso l'Istituto Tecnico Industriale B. Pascal. Ho sviluppato nel corso degli anni una forte passione per l'informatica, con un interesse particolare per lo sviluppo software.
+            </p>
+            <p>
+                Questo portfolio raccoglie le esperienze formative svolte nell'ambito dell'FSL (ex PCTO): laboratori pratici, incontri con il mondo del lavoro e progetti tecnici che mi hanno permesso di acquisire competenze concrete e orientarmi verso il futuro professionale.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+        <div class="skills-inner">
+            <p class="section-label">Competenze tecniche</p>
+            <h2 class="section-title">Skills</h2>
+            <div class="divider"></div>
+            <div class="skills-grid" id="skillsGrid">
+                <div class="skill-item">
+                    <p class="skill-name">HTML / CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">Reti</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">Sicurezza Informatica</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:65%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">Assembly</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:55%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">Java</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">SQL & Database</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:65%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">C++</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width:60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO YEARS -->
+    <section class="portfolio-section" id="portfolio">
+        <p class="section-label">Percorsi formativi</p>
+        <h2 class="section-title">Il mio Portfolio</h2>
+        <div class="divider"></div>
+        <p style="color:var(--grey-mid); margin-bottom:0; max-width:600px;">
+            Ecco la raccolta di lavori che ho svolto nel corso dei miei anni scolastici, organizzata per anno di riferimento.
+        </p>
+
+        <div class="year-cards">
+            <a href="pages/terzo-anno.html" class="year-card y3">
+                <div class="year-card-bg"></div>
+                <div class="year-card-overlay"></div>
+                <span class="year-card-num">3</span>
+                <div class="year-card-content">
+                    <h3 class="year-card-title">Terzo Anno</h3>
+                    <p class="year-card-count">4 attività</p>
+                </div>
+            </a>
+            <a href="pages/quarto-anno.html" class="year-card y4">
+                <div class="year-card-bg"></div>
+                <div class="year-card-overlay"></div>
+                <span class="year-card-num">4</span>
+                <div class="year-card-content">
+                    <h3 class="year-card-title">Quarto Anno</h3>
+                    <p class="year-card-count">4 attività</p>
+                </div>
+            </a>
+            <a href="pages/quinto-anno.html" class="year-card y5">
+                <div class="year-card-bg"></div>
+                <div class="year-card-overlay"></div>
+                <span class="year-card-num">5</span>
+                <div class="year-card-content">
+                    <h3 class="year-card-title">Quinto Anno</h3>
+                    <p class="year-card-count">1 attività</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Gabriele Palladino &nbsp;·&nbsp; <a href="https://www.pascal.edu.it/" target="_blank">I.T.I. B. Pascal</a></p>
+    </footer>
+
+    <script>
+        // Skill bars intersection observer
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, {
+            threshold: 0.3
+        });
+        document.querySelectorAll('.skill-item').forEach(el => observer.observe(el));
+
+        // Animate-up on scroll
+        const upObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.style.animationPlayState = 'running';
+            });
+        }, {
+            threshold: 0.1
+        });
+        document.querySelectorAll('.animate-up').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            upObs.observe(el);
+        });
+    </script>
+</body>
+
+</html>

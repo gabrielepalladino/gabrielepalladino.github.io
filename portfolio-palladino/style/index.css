@@ -1,0 +1,369 @@
+        /* ── HERO ───────────────────────────────── */
+        
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 55%, #1e3a7a 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 3rem;
+        }
+        
+        .hero-bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .hero-bg-circle.c1 {
+            width: 600px;
+            height: 600px;
+            top: -200px;
+            right: -150px;
+            border: 1px solid rgba(201, 168, 76, 0.1);
+        }
+        
+        .hero-bg-circle.c2 {
+            width: 350px;
+            height: 350px;
+            bottom: -100px;
+            left: 40%;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        
+        .hero-bg-circle.c3 {
+            width: 900px;
+            height: 900px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid rgba(201, 168, 76, 0.04);
+        }
+        
+        .hero-content {
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+            animation: fadeUp 0.8s both;
+        }
+        
+        .hero-eyebrow {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            color: var(--white);
+            line-height: 1.08;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-title em {
+            font-style: normal;
+            color: var(--accent);
+        }
+        
+        .hero-desc {
+            font-size: 1.05rem;
+            color: rgba(248, 249, 252, 0.65);
+            line-height: 1.75;
+            max-width: 500px;
+            margin-bottom: 2.5rem;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--accent);
+            color: var(--navy);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.9rem 2rem;
+            border-radius: 2px;
+            transition: background 0.2s, transform 0.2s;
+        }
+        
+        .hero-cta:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        
+        .hero-school {
+            position: absolute;
+            bottom: 2.5rem;
+            right: 3rem;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(248, 249, 252, 0.4);
+            font-size: 0.75rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .hero-school:hover {
+            color: var(--accent);
+        }
+        /* ── ABOUT ──────────────────────────────── */
+        
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 6rem 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .about-img-wrap {
+            position: relative;
+        }
+        
+        .about-img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border-radius: 3px;
+            display: block;
+            box-shadow: 0 20px 60px rgba(15, 30, 60, 0.18);
+        }
+        
+        .about-img-placeholder {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: linear-gradient(160deg, var(--navy-mid), var(--blue));
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.15);
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+        }
+        
+        .about-img-frame {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--accent);
+            border-radius: 3px;
+            z-index: -1;
+        }
+        
+        .about-text .section-title {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            font-size: 1rem;
+            line-height: 1.85;
+            color: var(--grey-dark);
+            margin-bottom: 1.25rem;
+        }
+        /* ── SKILLS ─────────────────────────────── */
+        
+        .skills-section {
+            background: var(--navy);
+            padding: 5rem 3rem;
+        }
+        
+        .skills-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .skills-inner .section-label {
+            color: var(--accent);
+        }
+        
+        .skills-inner .section-title {
+            color: var(--white);
+        }
+        
+        .skills-inner .divider {
+            background: var(--accent);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 3px;
+            padding: 1.25rem 1.5rem;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        
+        .skill-item:hover {
+            background: rgba(201, 168, 76, 0.08);
+            border-color: rgba(201, 168, 76, 0.3);
+        }
+        
+        .skill-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+        
+        .skill-bar {
+            height: 3px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .skill-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--blue-light));
+            border-radius: 2px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.8s ease 0.2s;
+        }
+        
+        .skill-item.visible .skill-bar-fill {
+            transform: scaleX(1);
+        }
+        /* ── PORTFOLIO SECTION ──────────────────── */
+        
+        .portfolio-section {
+            padding: 5rem 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .year-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        .year-card {
+            position: relative;
+            aspect-ratio: 4/3;
+            border-radius: 4px;
+            overflow: hidden;
+            text-decoration: none;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.75rem;
+            transition: transform 0.3s;
+        }
+        
+        .year-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .year-card-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s;
+        }
+        
+        .year-card:hover .year-card-bg {
+            transform: scale(1.05);
+        }
+        
+        .year-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10, 20, 50, 0.9) 0%, rgba(10, 20, 50, 0.2) 70%);
+        }
+        
+        .year-card-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .year-card-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.12);
+            position: absolute;
+            top: 1.25rem;
+            right: 1.5rem;
+            line-height: 1;
+        }
+        
+        .year-card-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+        
+        .year-card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+        
+        .year-card-count {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 0.3rem;
+        }
+        /* colors per year */
+        
+        .year-card.y3 .year-card-bg {
+            background: linear-gradient(135deg, #1e3a7a, #2152a3);
+        }
+        
+        .year-card.y4 .year-card-bg {
+            background: linear-gradient(135deg, #0f2a50, #1a4080);
+        }
+        
+        .year-card.y5 .year-card-bg {
+            background: linear-gradient(135deg, #0d1f40, #162d60);
+        }
+        
+        @media (max-width: 900px) {
+            .about-section {
+                grid-template-columns: 1fr;
+                padding: 4rem 1.5rem;
+            }
+            .about-img-wrap {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            .year-cards {
+                grid-template-columns: 1fr;
+            }
+            .skills-section {
+                padding: 4rem 1.5rem;
+            }
+            .portfolio-section {
+                padding: 4rem 1.5rem;
+            }
+            .hero {
+                padding: 0 1.5rem;
+            }
+        }
